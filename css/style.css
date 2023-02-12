@@ -69,7 +69,7 @@ body {
   border-bottom: 1px solid #444444;
 }
 .header .header__banner {
-  background: url(/img/header-banner.png);
+  background: url(../img/header-banner.png);
   height: 600px;
   width: 1250px;
 }
