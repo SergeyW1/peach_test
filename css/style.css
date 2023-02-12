@@ -1,0 +1,190 @@
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-condensed");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 6095px;
+  background: #F5F5F5;
+}
+
+.main {
+  font-family: "Proxima Nova Condensed", sans-serif;
+}
+
+.indents {
+  margin: 100px 0;
+}
+
+.proportions {
+  margin: 0 auto;
+  width: 1250px;
+}
+
+.header {
+  font-weight: 600;
+}
+.header .header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 70px;
+  height: 85px;
+  border: 1px solid #D9D9D9;
+}
+.header .header-title .header-title__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 688px;
+  margin-left: 297px;
+  height: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+}
+.header .header-title .header-title__nav a {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: inherit;
+  color: #444444;
+  text-decoration: none;
+  padding: 5px 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+.header .header-title .header-title__nav a:hover {
+  padding: 4px 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-bottom: 1px solid #444444;
+}
+.header .header__banner {
+  background: url(/img/header-banner.png);
+  height: 600px;
+  width: 1250px;
+}
+.header .header__banner .heade-banner__content {
+  width: 100%;
+  padding: 158px 471px 274px 70px;
+}
+.header .header__banner .heade-banner__content .header-banner__content-title {
+  font-weight: inherit;
+  color: #444444;
+  font-size: 56px;
+  line-height: 56px;
+  height: 168px;
+  width: 709px;
+  left: 0px;
+  top: 0px;
+}
+.header .header__banner .heade-banner__content .header-banner__btn {
+  cursor: pointer;
+  margin-top: 60px;
+  background: #B01736;
+  width: 110px;
+  height: 56px;
+  border-radius: 8px;
+  padding: 18px 28px;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+.header .header__banner .heade-banner__content .header-banner__btn span {
+  color: #ffffff;
+  font-weight: inherit;
+  font-size: 18px;
+  line-height: 20px;
+}
+.header .header__banner .heade-banner__content .header-banner__btn:hover {
+  background: #D43152;
+}
+
+.main-container {
+  margin-top: 100px;
+  font-family: "Proxima Nova Condensed", sans-serif;
+  font-weight: 600;
+}
+.main-container .about-company {
+  padding: 99px 110px;
+  background: #ffffff;
+  margin-left: 70px;
+  margin-right: 70px;
+  width: 1110px;
+  height: 350px;
+  -webkit-box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.0784313725);
+          box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.0784313725);
+}
+.main-container .about-company .about-company__text {
+  color: #444444;
+  height: 152px;
+  width: 890px;
+  left: 110px;
+  top: 99px;
+  font-family: inherit;
+  font-size: 32px;
+  font-weight: inherit;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.main-container .about-company .about-company__text span {
+  color: #B01736;
+}
+.main-container .about-info-number {
+  height: 287px;
+  width: 889px;
+  margin-right: 181px;
+  margin-left: 180px;
+}
+.main-container .about-info-number .wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main-container .about-info-number .wrapper .wrapper__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.main-container .about-info-number .wrapper .wrapper__item .item-info .item-info__title {
+  font-family: inherit;
+  font-size: 80px;
+  font-weight: inherit;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #A30C33;
+}
+.main-container .about-info-number .wrapper .wrapper__item .item-info span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #444444;
+}
+.main-container .about-info-number .wrapper .wrapper-indents {
+  margin-top: 80px;
+  margin-left: 147px;
+  margin-right: 150px;
+}
