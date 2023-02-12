@@ -224,13 +224,13 @@ body {
 				}
 
 				.rectangle-no-active {
-					background: url('../img/Rectangle_no-active.svg');
+					background: url('../img/Rectangle_no-active.svg') no-repeat;
 					height: 13px;
 					width: 22px;
 				}
 
 				.rectangle-active {
-					background: url('../img/Rectangle_active.svg');
+					background: url('../img/Rectangle_active.svg') no-repeat;
 					height: 13px;
 					width: 22px;
 				}

@@ -233,12 +233,12 @@ body {
   color: #444444;
 }
 .main-container .map .map-nav .slidebar .rectangle-no-active {
-  background: url("../img/Rectangle_no-active.svg");
+  background: url("../img/Rectangle_no-active.svg") no-repeat;
   height: 13px;
   width: 22px;
 }
 .main-container .map .map-nav .slidebar .rectangle-active {
-  background: url("../img/Rectangle_active.svg");
+  background: url("../img/Rectangle_active.svg") no-repeat;
   height: 13px;
   width: 22px;
 }
