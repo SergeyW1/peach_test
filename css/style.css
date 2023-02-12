@@ -6,6 +6,13 @@
           box-sizing: border-box;
 }
 
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+}
+
 body {
   height: 6095px;
   background: #F5F5F5;
@@ -54,11 +61,7 @@ body {
   padding: 5px 0;
 }
 .header .header-title .header-title__nav a {
-  font-size: 18px;
-  line-height: 20px;
   font-weight: inherit;
-  color: #444444;
-  text-decoration: none;
   padding: 5px 0;
   border-bottom: 1px solid #F5F5F5;
 }
@@ -185,4 +188,89 @@ body {
   margin-top: 80px;
   margin-left: 147px;
   margin-right: 150px;
+}
+.main-container .map {
+  height: 775px;
+}
+.main-container .map .map-nav {
+  width: 100%;
+  height: 80px;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-container .map .map-nav .slidebar {
+  width: 177px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-container .map .map-nav .slidebar span {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: inherit;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #444444;
+}
+.main-container .map .map-nav .slidebar .rectangle-no-active {
+  background: url("../img/Rectangle_no-active.svg");
+  height: 13px;
+  width: 22px;
+}
+.main-container .map .map-nav .slidebar .rectangle-active {
+  background: url("../img/Rectangle_active.svg");
+  height: 13px;
+  width: 22px;
+}
+.main-container .map .map-nav .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 736px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-container .map .map-nav .nav-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  border-bottom: 3px solid #ffffff;
+}
+.main-container .map .map-nav .nav-container a:hover {
+  color: #A30C33;
+}
+.main-container .map .map-nav .nav-container a:active {
+  border-bottom: 3px solid #A30C33;
+}
+.main-container .map .map__branch {
+  margin-top: 90px;
+  background: url("../img/map-branch.png");
+  height: 599.58px;
+  width: 1190px;
+  left: 30px;
 }
