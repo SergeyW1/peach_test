@@ -95,8 +95,6 @@ body {
   height: 56px;
   border-radius: 8px;
   padding: 18px 28px;
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
 }
 .header .header__banner .heade-banner__content .header-banner__btn span {
   color: #ffffff;
