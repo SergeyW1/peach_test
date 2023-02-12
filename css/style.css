@@ -208,6 +208,10 @@ body {
           justify-content: space-between;
 }
 .main-container .map .map-nav .slidebar {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 177px;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -204,6 +204,7 @@ body {
 			justify-content: space-between;
 
 			.slidebar {
+				user-select: none;
 				width: 177px;
 				display: flex;
 				align-items: center;
