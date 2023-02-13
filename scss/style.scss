@@ -67,7 +67,7 @@ body {
 	}
 
 	.header__banner {
-		background: url('../img/header-banner.png');
+		background: url('../img/header-banner.svg');
 		height: 600px;
 		width: 1250px;
 
@@ -267,6 +267,156 @@ body {
 			height: 599.58px;
 			width: 1190px;
 			left: 30px;
+		}
+	}
+
+	.mission {
+		background: #CB0F41;
+		height: 471px;
+
+		.mission-content {
+			position: relative;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			align-items: center;
+			justify-content: center;
+
+			.pattern {
+				z-index: 1;
+				display: flex;
+				height: 100%;
+				align-items: center;
+				position: absolute;
+				width: 100%;
+				justify-content: space-between;
+				flex-direction: row-reverse;
+				overflow: hidden;
+
+				.mission-content__r-pattern {
+					position: absolute;
+					right: -50px;
+					width: 348.05px;
+					height: 376.95px;
+					background: url('../img/smission_r-pattern.png') no-repeat;
+					opacity: 40%;
+				}
+
+				.mission-content__l-pattern {
+					position: absolute;
+					left: 0px;
+					width: 348.05px;
+					height: 376.95px;
+					background: url('../img/smission_l-pattern.png') no-repeat;
+					opacity: 40%;
+				}
+			}
+
+			.mission-content__title {
+				z-index: 5;
+				width: 1110px;
+				font-family: inherit;
+				color: #FFFFFF;
+				font-weight: inherit;
+				text-align: center;
+
+				h4 {
+					font-weight: inherit;
+					font-size: 56px;
+					line-height: 56px;
+					margin-bottom: 40px;
+				}
+
+				span {
+					display: inline-block;
+					width: 98%;
+					font-size: 32px;
+					font-weight: 400;
+					line-height: 48px;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.directions {
+		height: 936px;
+
+		&__title {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 55px;
+
+			h4 {
+				font-family: inherit;
+				font-size: 56px;
+				font-weight: inherit;
+				line-height: 56px;
+				color: $cGray;
+			}
+		}
+
+		&__banner {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			height: 825px;
+			align-content: space-between;
+		}
+
+		&__banner--solutions {
+			background: url('../img/solutions.svg');
+		}
+
+		&__banner--cybersecurity {
+			background: url('../img/cybersecurity.svg');
+		}
+
+		&__banner--import-substitution {
+			background: url('../img/import-substitution.svg');
+		}
+
+		&__banner--cloud-solutions {
+			background: url('../img/cloud-solutions.svg');
+		}
+
+		&__banner--development {
+			background: url('../img/development.svg');
+		}
+
+		&__banner--tech-support {
+			background: url('../img/tech-support.svg');
+		}
+	}
+
+	.banner-size {
+		position: relative;
+		cursor: pointer;
+		height: 260px;
+		width: 615px;
+		z-index: 1;
+	}
+
+	.banner-text {
+		padding-left: 20px;
+		display: flex;
+		align-items: center;
+		z-index: 2;
+		position: absolute;
+		height: 80px;
+		width: 100%;
+		background-color: rgba(45, 54, 83, 0.6);
+		bottom: 0;
+
+		span {
+			z-index: 3;
+			color: #FFFFFF;
+			font-family: inherit;
+			font-size: 24px;
+			font-weight: inherit;
+			line-height: 24px;
+			position: absolute;
 		}
 	}
 
