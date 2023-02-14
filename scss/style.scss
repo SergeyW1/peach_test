@@ -399,7 +399,6 @@ body {
 					padding-left: 20px;
 					display: flex;
 					align-items: center;
-					z-index: 2;
 					position: absolute;
 					height: 80px;
 					width: 100%;
@@ -407,19 +406,43 @@ body {
 					bottom: 0;
 					transition: ease .7s;
 
-					span {
-						z-index: 3;
+					.banner-text__title {
+						display: inline-block;
 						color: #FFFFFF;
 						font-family: inherit;
 						font-size: 24px;
 						font-weight: inherit;
 						line-height: 24px;
-						position: absolute;
+						max-width: 308px;
+					}
+
+					.banner-text__description {
+						font-family: inherit;
+						font-size: 17px;
+						font-weight: 400;
+						line-height: 24px;
+						margin-top: 20px;
+						width: 0;
+						opacity: 0;
+						transition: ease .5s;
+						color: #FFFFFF;
+					}
+
+					.banner-text__description-active {
+						font-size: 17px;
+						font-weight: 400;
+						line-height: 24px;
+						margin-top: 20px;
+						display: block;
+						opacity: 1;
+						transition: ease .1s;
+						width: 480px;
 					}
 				}
 
 				.banner-text__open {
 					display: flex;
+					flex-direction: column;
 					height: 100%;
 					padding-top: 28px;
 					align-items: flex-start;
