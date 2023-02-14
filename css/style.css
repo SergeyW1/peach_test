@@ -71,16 +71,16 @@ body {
           transform: scale(1);
   border-bottom: 1px solid #444444;
 }
-.header .header__banner {
+.header .header-banner {
   background: url("../img/header-banner.svg");
   height: 600px;
   width: 1250px;
 }
-.header .header__banner .heade-banner__content {
+.header .header-banner .header-banner__content {
   width: 100%;
   padding: 158px 471px 274px 70px;
 }
-.header .header__banner .heade-banner__content .header-banner__content-title {
+.header .header-banner .header-banner__content .header-banner__content--title {
   font-weight: inherit;
   color: #444444;
   font-size: 56px;
@@ -90,7 +90,7 @@ body {
   left: 0px;
   top: 0px;
 }
-.header .header__banner .heade-banner__content .header-banner__btn {
+.header .header-banner .header-banner__content .header-banner__content--btn {
   cursor: pointer;
   margin-top: 60px;
   background: #B01736;
@@ -99,13 +99,13 @@ body {
   border-radius: 8px;
   padding: 18px 28px;
 }
-.header .header__banner .heade-banner__content .header-banner__btn span {
+.header .header-banner .header-banner__content .header-banner__content--btn span {
   color: #ffffff;
   font-weight: inherit;
   font-size: 18px;
   line-height: 20px;
 }
-.header .header__banner .heade-banner__content .header-banner__btn:hover {
+.header .header-banner .header-banner__content .header-banner__content--btn:hover {
   background: #D43152;
 }
 
@@ -357,7 +357,7 @@ body {
 .main-container .directions {
   height: 936px;
 }
-.main-container .directions__title {
+.main-container .directions .directions__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,14 +369,14 @@ body {
           justify-content: center;
   margin-bottom: 55px;
 }
-.main-container .directions__title h4 {
+.main-container .directions .directions__title h4 {
   font-family: inherit;
   font-size: 56px;
   font-weight: inherit;
   line-height: 56px;
   color: #444444;
 }
-.main-container .directions__banner {
+.main-container .directions .directions__banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,32 +389,32 @@ body {
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
-.main-container .directions__banner--solutions {
+.main-container .directions .directions__banner .directions__banner--solutions {
   background: url("../img/solutions.svg");
 }
-.main-container .directions__banner--cybersecurity {
+.main-container .directions .directions__banner .directions__banner--cybersecurity {
   background: url("../img/cybersecurity.svg");
 }
-.main-container .directions__banner--import-substitution {
+.main-container .directions .directions__banner .directions__banner--import-substitution {
   background: url("../img/import-substitution.svg");
 }
-.main-container .directions__banner--cloud-solutions {
+.main-container .directions .directions__banner .directions__banner--cloud-solutions {
   background: url("../img/cloud-solutions.svg");
 }
-.main-container .directions__banner--development {
+.main-container .directions .directions__banner .directions__banner--development {
   background: url("../img/development.svg");
 }
-.main-container .directions__banner--tech-support {
+.main-container .directions .directions__banner .directions__banner--tech-support {
   background: url("../img/tech-support.svg");
 }
-.main-container .banner-size {
+.main-container .directions .directions__banner .banner-size {
   position: relative;
   cursor: pointer;
   height: 260px;
   width: 615px;
   z-index: 1;
 }
-.main-container .banner-text {
+.main-container .directions .directions__banner .banner-size .banner-text {
   padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -428,8 +428,10 @@ body {
   width: 100%;
   background-color: rgba(45, 54, 83, 0.6);
   bottom: 0;
+  -webkit-transition: ease 0.7s;
+  transition: ease 0.7s;
 }
-.main-container .banner-text span {
+.main-container .directions .directions__banner .banner-size .banner-text span {
   z-index: 3;
   color: #FFFFFF;
   font-family: inherit;
@@ -437,4 +439,16 @@ body {
   font-weight: inherit;
   line-height: 24px;
   position: absolute;
+}
+.main-container .directions .directions__banner .banner-size .banner-text__open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding-top: 28px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transition: ease 0.7s;
+  transition: ease 0.7s;
 }

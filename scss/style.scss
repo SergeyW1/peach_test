@@ -66,16 +66,16 @@ body {
 		}
 	}
 
-	.header__banner {
+	.header-banner {
 		background: url('../img/header-banner.svg');
 		height: 600px;
 		width: 1250px;
 
-		.heade-banner__content {
+		.header-banner__content {
 			width: 100%;
 			padding: 158px 471px 274px 70px;
 
-			.header-banner__content-title {
+			.header-banner__content--title {
 				font-weight: inherit;
 				color: $cGray;
 				font-size: 56px;
@@ -86,7 +86,7 @@ body {
 				top: 0px;
 			}
 
-			.header-banner__btn {
+			.header-banner__content--btn {
 				cursor: pointer;
 				margin-top: 60px;
 				background: $cRed;
@@ -342,7 +342,7 @@ body {
 	.directions {
 		height: 936px;
 
-		&__title {
+		.directions__title {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -357,67 +357,75 @@ body {
 			}
 		}
 
-		&__banner {
+		.directions__banner {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
 			height: 825px;
 			align-content: space-between;
-		}
 
-		&__banner--solutions {
-			background: url('../img/solutions.svg');
-		}
+			.directions__banner--solutions {
+				background: url('../img/solutions.svg');
+			}
 
-		&__banner--cybersecurity {
-			background: url('../img/cybersecurity.svg');
-		}
+			.directions__banner--cybersecurity {
+				background: url('../img/cybersecurity.svg');
+			}
 
-		&__banner--import-substitution {
-			background: url('../img/import-substitution.svg');
-		}
+			.directions__banner--import-substitution {
+				background: url('../img/import-substitution.svg');
+			}
 
-		&__banner--cloud-solutions {
-			background: url('../img/cloud-solutions.svg');
-		}
+			.directions__banner--cloud-solutions {
+				background: url('../img/cloud-solutions.svg');
+			}
 
-		&__banner--development {
-			background: url('../img/development.svg');
-		}
+			.directions__banner--development {
+				background: url('../img/development.svg');
+			}
 
-		&__banner--tech-support {
-			background: url('../img/tech-support.svg');
+			.directions__banner--tech-support {
+				background: url('../img/tech-support.svg');
+			}
+
+			.banner-size {
+				position: relative;
+				cursor: pointer;
+				height: 260px;
+				width: 615px;
+				z-index: 1;
+
+				.banner-text {
+					padding-left: 20px;
+					display: flex;
+					align-items: center;
+					z-index: 2;
+					position: absolute;
+					height: 80px;
+					width: 100%;
+					background-color: rgba(45, 54, 83, 0.6);
+					bottom: 0;
+					transition: ease .7s;
+
+					span {
+						z-index: 3;
+						color: #FFFFFF;
+						font-family: inherit;
+						font-size: 24px;
+						font-weight: inherit;
+						line-height: 24px;
+						position: absolute;
+					}
+				}
+
+				.banner-text__open {
+					display: flex;
+					height: 100%;
+					padding-top: 28px;
+					align-items: flex-start;
+					transition: ease .7s;
+				}
+			}
 		}
 	}
-
-	.banner-size {
-		position: relative;
-		cursor: pointer;
-		height: 260px;
-		width: 615px;
-		z-index: 1;
-	}
-
-	.banner-text {
-		padding-left: 20px;
-		display: flex;
-		align-items: center;
-		z-index: 2;
-		position: absolute;
-		height: 80px;
-		width: 100%;
-		background-color: rgba(45, 54, 83, 0.6);
-		bottom: 0;
-
-		span {
-			z-index: 3;
-			color: #FFFFFF;
-			font-family: inherit;
-			font-size: 24px;
-			font-weight: inherit;
-			line-height: 24px;
-			position: absolute;
-		}
-	}
-
 }
