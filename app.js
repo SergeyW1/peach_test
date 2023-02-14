@@ -6,6 +6,8 @@ const bannerText = document.querySelectorAll(".banner-text");
 const bannerTextDescription = document.querySelectorAll(
 	".banner-text__description"
 );
+const sliderPhoto = document.querySelectorAll('.photo-size')
+const gallerySlider = document.querySelector('.gallery__slider')
 let dataSizeIndex;
 dataSet();
 
@@ -41,7 +43,8 @@ function dataSet() {
 	bannerSize.forEach((item, index) => {
 		item.dataset.sizeIn = index;
 	});
-	bannerText.forEach((item, index) => {
-		item.dataset.textIn = index;
+	sliderPhoto.forEach((item, index) => {
+		item.dataset.numPhoto = index + 1;
 	});
 }
+

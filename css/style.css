@@ -175,6 +175,7 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #A30C33;
+  word-spacing: -6px;
 }
 .main-container .about-info-number .wrapper .wrapper__item .item-info span {
   font-size: 18px;
@@ -272,11 +273,11 @@ body {
   border-bottom: 3px solid #A30C33;
 }
 .main-container .map .map__branch {
-  margin-top: 90px;
   background: url("../img/map-branch.png");
   height: 599.58px;
   width: 1190px;
   left: 30px;
+  margin: 90px auto 0 auto;
 }
 .main-container .mission {
   background: #CB0F41;
@@ -473,4 +474,259 @@ body {
           align-items: flex-start;
   -webkit-transition: ease 0.7s;
   transition: ease 0.7s;
+}
+.main-container .benefits {
+  height: 856px;
+  width: 1110px;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+.main-container .benefits .title-red {
+  color: #B01736;
+}
+.main-container .benefits .cart-size {
+  height: 50px;
+  width: 50px;
+}
+.main-container .benefits .benefits-content__compensation {
+  position: relative;
+  padding-bottom: 70px;
+  width: 958px;
+  margin: 0 auto;
+}
+.main-container .benefits .benefits-content__compensation::after {
+  content: "";
+  margin: 0 30px;
+  bottom: 0;
+  position: absolute;
+  left: -76px;
+  height: 1px;
+  width: 1050px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.main-container .benefits .benefits-content__compensation .benefits-content__compensation--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: inherit;
+  font-size: 56px;
+  font-weight: inherit;
+  line-height: 56px;
+  color: #444444;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.main-container .benefits .benefits-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-container .benefits .benefits-cart:only-child {
+  padding-right: 17px;
+}
+.main-container .benefits .benefits-cart .benefits-cart__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 178px;
+}
+.main-container .benefits .benefits-cart .benefits-cart__item span {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+.main-container .benefits .benefits-cart .benefits-cart__item .item-cart {
+  height: 110px;
+  width: 110px;
+  background: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+.main-container .benefits .benefits-cart .benefits-cart__item .item-cart .item-cart__dms {
+  background: url("../img/benefits/frame-dms.svg") no-repeat;
+}
+.main-container .benefits .benefits-cart .benefits-cart__item .item-cart .item-cart__happy {
+  background: url("../img/benefits/frame-happy.svg") no-repeat;
+}
+.main-container .benefits .benefits-cart .benefits-cart__item .item-cart .item-cart__connect {
+  background: url("../img/benefits/frame-connect.svg") no-repeat;
+}
+.main-container .benefits .benefits-cart .benefits-cart__item .item-cart .item-cart__discounts {
+  background: url("../img/benefits/frame-discounts-sport.svg") no-repeat;
+}
+.main-container .benefits .benefits-cart .benefits-cart__item .item-cart .item-cart__lti {
+  background: url("../img/benefits/frame-lti.svg") no-repeat;
+  width: 68px;
+  height: 48px;
+}
+.main-container .benefits .benefits-cart .benefits-cart__item .item-cart .item-cart__mortgage {
+  background: url("../img/benefits/frame-mortgage.svg") no-repeat;
+}
+.main-container .benefits .benefits-cart .benefits-cart__item .item-cart .item-cart__equipment {
+  background: url("../img/benefits/frame-office-equipment.svg") no-repeat;
+}
+.main-container .benefits .benefits-cart .item-size {
+  width: 110px;
+}
+.main-container .benefits .benefits-cart-size {
+  padding: 0;
+  width: 490px;
+  margin-left: 312px;
+  margin-right: 308px;
+}
+.main-container .benefits .benefits-content__motivation {
+  padding-top: 70px;
+}
+.main-container .benefits .benefits-content__motivation .benefits-content__motivation--title {
+  width: 755px;
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: inherit;
+  line-height: 49px;
+  color: #444444;
+  margin-left: 179px;
+  margin-right: 175px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.main-container .gallery {
+  height: 980px;
+  width: 1110px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.main-container .gallery .gallery__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-container .gallery .gallery__title span {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 56px;
+  font-weight: inherit;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #444444;
+  width: 615px;
+  margin-bottom: 45px;
+}
+.main-container .gallery .gallery__title .gallery__slider {
+  margin-top: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 132px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-container .gallery .gallery__title .gallery__slider .gallery__slider--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  position: relative;
+  background: #F0F0F0;
+  height: 56px;
+  width: 56px;
+  cursor: pointer;
+}
+.main-container .gallery .gallery__title .gallery__slider .gallery__slider--left::after {
+  content: "";
+  background: url("../img/gallery/Rectangle-left.svg") no-repeat;
+  width: 12px;
+  height: 21px;
+  position: absolute;
+}
+.main-container .gallery .gallery__title .gallery__slider .gallery__slider--left:hover {
+  background: #d5d5d5;
+}
+.main-container .gallery .gallery__title .gallery__slider .gallery__slider--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  position: relative;
+  background: #F0F0F0;
+  height: 56px;
+  width: 56px;
+  cursor: pointer;
+}
+.main-container .gallery .gallery__title .gallery__slider .gallery__slider--right::after {
+  content: "";
+  background: url("../img/gallery/Rectangle-right.svg") no-repeat;
+  width: 12px;
+  height: 21px;
+  position: absolute;
+}
+.main-container .gallery .gallery__title .gallery__slider .gallery__slider--right:hover {
+  background: #d5d5d5;
+}
+.main-container .gallery .gallery-content .gallery-content__photo .photo-1 {
+  background: url("../img/gallery/slider-photo__1.svg");
+}
+.main-container .gallery .gallery-content .gallery-content__photo .photo-2 {
+  background: url("../img/gallery/slider-photo__2.svg");
+}
+.main-container .gallery .gallery-content .gallery-content__photo .photo-3 {
+  background: url("../img/gallery/slider-photo__3.svg");
+}
+.main-container .gallery .gallery-content .gallery-content__photo .photo-4 {
+  background: url("../img/gallery/slider-photo__4.svg");
+}
+.main-container .gallery .gallery-content .gallery-content__photo .photo-5 {
+  background: url("../img/gallery/slider-photo__5.svg");
+}
+.main-container .gallery .gallery-content .gallery-content__photo .photo-size {
+  opacity: 0;
+}
+.main-container .gallery .gallery-content .gallery-content__photo .active-photo {
+  opacity: 1;
+  width: 1110px;
+  height: 834px;
 }
