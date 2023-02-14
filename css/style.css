@@ -447,8 +447,6 @@ body {
   margin-top: 20px;
   width: 0;
   opacity: 0;
-  -webkit-transition: ease 0.5s;
-  transition: ease 0.5s;
   color: #FFFFFF;
 }
 .main-container .directions .directions__banner .banner-size .banner-text .banner-text__description-active {
@@ -458,8 +456,6 @@ body {
   margin-top: 20px;
   display: block;
   opacity: 1;
-  -webkit-transition: ease 0.1s;
-  transition: ease 0.1s;
   width: 480px;
 }
 .main-container .directions .directions__banner .banner-size .banner-text__open {
