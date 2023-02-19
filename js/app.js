@@ -43,6 +43,9 @@ slidebar.addEventListener("click", () => {
 		document.querySelectorAll('.nav-container__item').forEach(item => {
 			if (item.classList.contains('nav-active')) {
 				item.classList.remove('nav-active')
+				regions.forEach(item => {
+					item.classList.remove('none')
+				})
 			}
 		})
 	}
