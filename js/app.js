@@ -16,7 +16,6 @@ dataSet();
 
 map.addEventListener("click", (e) => {
 	let region = e.target.dataset.region
-	console.log(region);
 	if (e.target.classList.contains('nav-container__item')) {
 		const el = document.querySelector('.nav-active')
 		if (el) {
@@ -26,12 +25,14 @@ map.addEventListener("click", (e) => {
 		regions.forEach(item => {
 			item.classList.add('none')
 		})
-		regions[region - 1].classList.remove('none')
-		if (e.target.dataset.region === '0') {
+		if (region === '0') {
 			regions.forEach(item => {
 				item.classList.remove('none')
 			})
+		} else {
+			regions[region - 1].classList.remove('none')
 		}
+
 	}
 });
 
