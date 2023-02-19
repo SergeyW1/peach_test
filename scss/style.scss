@@ -94,12 +94,21 @@ body {
 				height: 56px;
 				border-radius: 8px;
 				padding: 18px 28px;
+				position: relative;
 
-				span {
+				a {
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
 					color: #ffffff;
 					font-weight: inherit;
 					font-size: 18px;
 					line-height: 20px;
+					width: 110px;
+					height: 56px;
 				}
 
 				&:hover {
@@ -194,6 +203,7 @@ body {
 
 	.map {
 		height: 775px;
+		position: relative;
 
 		.map-nav {
 			width: 100%;
@@ -211,7 +221,8 @@ body {
 				align-items: center;
 				cursor: pointer;
 				justify-content: space-between;
-
+				z-index: 2;
+				position: relative;
 
 				span {
 					font-family: inherit;
@@ -220,8 +231,6 @@ body {
 					line-height: 24px;
 					letter-spacing: 0em;
 					color: $cGray;
-
-					&:hover {}
 				}
 
 				.rectangle-no-active {
@@ -231,9 +240,11 @@ body {
 				}
 
 				.rectangle-active {
+					position: absolute;
 					background: url('../img/Rectangle_active.svg') no-repeat;
 					height: 13px;
 					width: 22px;
+					right: -26px
 				}
 			}
 
@@ -244,22 +255,23 @@ body {
 				width: 736px;
 				justify-content: space-between;
 
-				a {
+				.nav-container__item {
 					display: flex;
 					align-items: center;
 					height: 100%;
 					border-bottom: 3px solid #ffffff;
+					cursor: pointer;
 
 					&:hover {
 						color: #A30C33;
 					}
+				}
 
-					&:active {
-						border-bottom: 3px solid #A30C33;
-					}
+				.nav-active {
+					border-bottom: 3px solid #A30C33;
+					color: #A30C33;
 				}
 			}
-
 		}
 
 		.map__branch {
@@ -268,6 +280,472 @@ body {
 			width: 1190px;
 			left: 30px;
 			margin: 90px auto 0 auto;
+
+			.regions {
+				width: 100%;
+				height: 100%;
+				position: relative;
+
+				p {
+					font-family: inherit;
+					font-size: 12px;
+					font-weight: 600;
+					line-height: 12px;
+				}
+
+				.regions__container--vor {
+					position: absolute;
+					top: 245px;
+					left: 77px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--yar {
+					position: absolute;
+					top: 195px;
+					left: 158px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--bel {
+					position: absolute;
+					top: 274px;
+					left: 74px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--spb {
+					position: absolute;
+					top: 131px;
+					left: 101px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 16px;
+						line-height: 16px;
+					}
+				}
+
+				.regions__container--kalin {
+					position: absolute;
+					top: 123px;
+					left: 10px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--rost-don {
+					position: absolute;
+					top: 319px;
+					left: 44px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 14px;
+						line-height: 14px;
+					}
+				}
+
+				.regions__container--kras {
+					position: absolute;
+					top: 378px;
+					left: 25px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 14px;
+						line-height: 14px;
+					}
+				}
+
+				.regions__container--volg {
+					position: absolute;
+					top: 359px;
+					left: 89px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--kaz {
+					position: absolute;
+					top: 296px;
+					left: 238px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--sam {
+					position: absolute;
+					top: 304px;
+					left: 174px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--ufa {
+					position: absolute;
+					top: 334px;
+					left: 249px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--oren {
+					position: absolute;
+					top: 363px;
+					left: 202px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--n-novg {
+					position: absolute;
+					top: 258px;
+					left: 169px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--ekb {
+					position: absolute;
+					top: 326px;
+					left: 294px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--chelb {
+					position: absolute;
+					top: 361px;
+					left: 294px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 14px;
+						line-height: 14px;
+					}
+				}
+
+				.regions__container--perm {
+					position: absolute;
+					top: 298px;
+					left: 367px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 14px;
+						line-height: 14px;
+					}
+				}
+
+				.regions__container--surg {
+					position: absolute;
+					top: 309px;
+					left: 423px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--tum {
+					position: absolute;
+					top: 362px;
+					left: 395px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 14px;
+						line-height: 14px;
+					}
+				}
+
+				.regions__container--izh {
+					position: absolute;
+					top: 287px;
+					left: 314px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--nov {
+					position: absolute;
+					top: 452px;
+					left: 485px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--omsk {
+					position: absolute;
+					top: 473px;
+					left: 450px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 14px;
+						line-height: 14px;
+					}
+				}
+
+				.regions__container--tomsk {
+					position: absolute;
+					top: 441px;
+					left: 566px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 14px;
+						line-height: 14px;
+					}
+				}
+
+				.regions__container--kras-yar {
+					position: absolute;
+					top: 454px;
+					left: 612px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+				}
+
+				.regions__container--irk {
+					position: absolute;
+					top: 488px;
+					left: 674px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 14px;
+						line-height: 14px;
+					}
+				}
+
+				.regions__container--hab {
+					position: absolute;
+					top: 478px;
+					right: 166px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 16px;
+						line-height: 16px;
+					}
+				}
+
+				.regions__container--vlad {
+					position: absolute;
+					top: 574px;
+					right: 172px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 16px;
+						line-height: 16px;
+					}
+				}
+
+				.regions__container--msk {
+					position: absolute;
+					top: 223px;
+					left: 126px;
+					display: flex;
+					flex-direction: column-reverse;
+					align-items: center;
+					color: #444444;
+					justify-content: space-around;
+					height: 26px;
+
+					p {
+						font-size: 14px;
+						line-height: 14px;
+					}
+				}
+
+				.elipse {
+					height: 8px;
+					width: 8px;
+					border-radius: 50%;
+					background: #444444;
+				}
+			}
+
+			.none {
+				display: none;
+			}
+
+			.active-region {
+				display: block;
+			}
+		}
+
+		.modal {
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			visibility: hidden;
+			background: #ffffff9c;
+			transition: all 0.5s ease 0s;
+
+			.modal-container {
+				width: 100%;
+				height: 272px;
+				background: #FFFFFF;
+				margin-top: 100px;
+				box-shadow: 0px 0px 32px 0px rgb(0 0 0 / 8%);
+
+				.modal-regions {
+					width: 100%;
+					height: 100%;
+					padding: 30px 68.5px;
+
+					.regions {
+						display: flex;
+						width: 100%;
+						height: 100%;
+						justify-content: space-between;
+
+						.regions__item {
+							font-size: 18px;
+							font-family: inherit;
+							font-weight: inherit;
+							line-height: 20px;
+							color: #444444;
+
+							.regions__item--city {
+								font-weight: 400;
+								margin-top: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.modal-active {
+			opacity: 0.99;
+			visibility: visible;
+			z-index: 1;
 		}
 	}
 
@@ -770,6 +1248,7 @@ body {
 				.slick-dots {
 					display: flex;
 					justify-content: space-between;
+					bottom: -43px;
 
 
 					.slick-active {
@@ -788,6 +1267,7 @@ body {
 						padding: 0;
 						cursor: pointer;
 						background: #E5E5E5;
+						margin: 0;
 
 						button {
 							&::before {
@@ -795,64 +1275,8 @@ body {
 							}
 						}
 					}
-
-
 				}
 			}
 		}
 	}
-
-	/* Слайдер */
-	.slick-slider {}
-
-	/* Слайдер запущен */
-	.slick-slider.slick-initialized {}
-
-	/* Слайдер с точками */
-	.slick-slider.slick-dotted {}
-
-	/* Ограничивающая оболочка */
-	.slick-list {}
-
-	/* Лента слайдов */
-	.slick-track {}
-
-	/* Слайд */
-	.slick-slide {}
-
-	/* Слайд активный (показывается) */
-	.slick-slide.slick-active {}
-
-	/* Слайд основной */
-	.slick-slide.slick-current {}
-
-	/* Слайд по центру */
-	.slick-slide.slick-center {}
-
-	/* Клонированный слайд */
-	.slick-slide.slick-cloned {}
-
-	/* Стрелка */
-	.slick-arrow {}
-
-	/* Стрелка влево */
-	.slick-arrow.slick-prev {}
-
-	/* Стрелка вправо */
-	.slick-arrow.slick-next {}
-
-	/* Стрелка не активная */
-	.slick-arrow.slick-disabled {}
-
-	/* Точки (булиты) */
-	.slick-dots {}
-
-	.slick-dots li {}
-
-	/* Активная точка */
-	.slick-dots li.slick-active {}
-
-	/* Элемент точки */
-	.slick-dots li button {}
-
 }
