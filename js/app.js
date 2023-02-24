@@ -10,6 +10,7 @@ const rectangleNoActive = document.querySelector(".rectangle-no-active")
 const modal = document.querySelector('.modal')
 const navItem = document.querySelectorAll('.nav-container__item')
 const regions = document.querySelectorAll('.regions__container')
+const wrapperItem = document.querySelectorAll('.item-info')
 let dataSizeIndex;
 let dataRegionIndex;
 dataSet();
@@ -81,8 +82,8 @@ function dataSet() {
 	navItem.forEach((item, index) => {
 		item.dataset.region = index;
 	});
-	regions.forEach((item, index) => {
-		item.dataset.region = index + 1
+	wrapperItem.forEach((item, index) => {
+		item.dataset.wrapperItem = index + 1
 	})
 }
 

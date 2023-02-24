@@ -67,9 +67,10 @@ body {
 	}
 
 	.header-banner {
-		background: url('../img/header-banner.svg');
+		background: url('../img/header-banner.svg') no-repeat;
 		height: 600px;
 		width: 1250px;
+		margin-top: -2px;
 
 		.header-banner__content {
 			width: 100%;
@@ -96,7 +97,8 @@ body {
 				padding: 18px 28px;
 				position: relative;
 
-				a {
+				a::before {
+					content: 'На сайт';
 					position: absolute;
 					top: 0;
 					left: 0;
@@ -110,6 +112,7 @@ body {
 					width: 110px;
 					height: 56px;
 				}
+
 
 				&:hover {
 					background: #D43152;
@@ -1272,6 +1275,389 @@ body {
 						button {
 							&::before {
 								content: '';
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 315px) {
+	.proportions {
+		width: 290px;
+	}
+
+	.header {
+		.header-title {
+			flex-direction: column;
+			height: 110px;
+			padding: 0 0 0 5px;
+
+			.header-title__logo {
+				height: 25px;
+				width: 100%;
+				margin: 16px 0 13px 0;
+			}
+
+			.header-title__nav {
+				width: 100%;
+				margin-left: 0;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				padding: 0;
+
+				a {
+					padding: 3px 8px 1px 0px;
+					font-size: 14px;
+					line-height: 16px;
+
+					&:hover {
+						padding: 3px 8px 1px 0px;
+						transform: scale(1);
+						border-bottom: 1px solid $cGray;
+					}
+				}
+			}
+		}
+
+		.header-banner {
+			height: 300px;
+			width: 290px;
+			background-size: cover;
+			background-position: -166px 2px;
+
+			.header-banner__content {
+				padding: 43px 6px 76px;
+
+				.header-banner__content--title {
+					font-size: 28px;
+					line-height: 28px;
+				}
+
+				.header-banner__content--btn {
+					width: 110px;
+					height: 32px;
+					margin-top: 18px;
+					padding: 17px 18px;
+					margin-left: 1px;
+
+					a::before {
+						content: 'Наш сайт';
+						font-size: 16px;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.indents {
+		margin: 50px 0;
+	}
+
+	.main-container {
+		margin-top: 60px;
+
+		.about-company {
+			width: 290px;
+			height: 181px;
+			padding: 27px 6px;
+			margin: 0;
+
+			.about-company__text {
+				height: 133px;
+				width: 280px;
+				font-size: 16px;
+				line-height: 19px;
+			}
+		}
+
+		.about-info-number {
+			height: 242px;
+			width: 264px;
+			margin: 50px auto;
+
+			.wrapper {
+				position: relative;
+
+				.wrapper-indents {
+					margin: 0;
+				}
+
+				.wrapper__item {
+					.item-info {
+						.item-info__title {
+							font-size: 40px;
+							line-height: 32px;
+						}
+
+						span {
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 24px;
+							text-align: center;
+						}
+					}
+
+					[data-wrapper-item="1"] {
+						position: absolute;
+						top: 0;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						gap: 4px;
+
+						.item-info__title {
+							letter-spacing: 1px;
+							word-spacing: -7px;
+							line-height: 35px;
+						}
+					}
+
+					[data-wrapper-item="2"] {
+						position: absolute;
+						top: 2px;
+						right: 0px;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						gap: 4px;
+					}
+
+					[data-wrapper-item="3"] {
+						position: absolute;
+						top: 86px;
+						left: 12px;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						gap: 4px;
+					}
+
+					[data-wrapper-item="4"] {
+						position: absolute;
+						top: 85px;
+						right: 10px;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						gap: 4px;
+					}
+
+					[data-wrapper-item="5"] {
+						position: absolute;
+						top: 170px;
+						right: 44px;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						gap: 3px;
+
+						span {
+							line-height: 20px;
+						}
+					}
+				}
+			}
+		}
+
+		.map {
+			height: 469px;
+			overflow-x: auto;
+
+			.map-nav {
+				overflow-x: auto;
+				height: 99px;
+				padding: 22px 0 0 5px;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+
+				.nav-container {
+					width: 518px;
+					font-size: 14px;
+					line-height: 16px;
+					padding: 2px 0 0 0;
+				}
+
+				.slidebar {
+					width: 147px;
+
+					.rectangle-active {
+						position: static;
+					}
+
+					span {
+						font-size: 20px;
+						line-height: 20px;
+					}
+				}
+			}
+
+			.map__branch {
+				height: 452.8px;
+				width: 794px;
+				background-position: -6px 7px;
+				background-size: 863px;
+				margin: 0;
+
+				.regions {
+					.regions__container--msk {
+						top: 170px;
+						left: 88px;
+					}
+
+
+					.regions__container--vor {
+						top: 185px;
+						left: 53px;
+					}
+
+					.regions__container--yar {
+						top: 149px;
+						left: 111px;
+					}
+
+					.regions__container--bel {
+						top: 210px;
+						left: 45px;
+					}
+
+
+					.regions__container--spb {
+						top: 101px;
+						left: 71px;
+						height: 31px;
+					}
+
+
+					.regions__container--kalin {
+						top: 96px;
+						left: 3px;
+						height: 28px;
+					}
+
+					.regions__container--rost-don {
+						top: 238px;
+						left: 28px;
+					}
+
+					.regions__container--kras {
+						top: 282px;
+						left: 15px;
+					}
+
+					.regions__container--volg {
+						top: 267px;
+						left: 61px;
+					}
+
+					.regions__container--kaz {
+						top: 222px;
+						left: 169px;
+					}
+
+					.regions__container--sam {
+						top: 228px;
+						left: 124px;
+					}
+
+					.regions__container--ufa {
+						top: 250px;
+						left: 177px;
+					}
+
+					.regions__container--oren {
+						top: 270px;
+						left: 143px;
+					}
+
+					.regions__container--n-novg {
+						top: 195px;
+						left: 120px;
+						letter-spacing: 0.2px;
+					}
+
+
+					.regions__container--ekb {
+						top: 244px;
+						left: 209px;
+					}
+
+					.regions__container--chelb {
+						top: 270px;
+						left: 210px;
+					}
+
+					.regions__container--perm {
+						top: 225px;
+						left: 265px;
+					}
+
+					.regions__container--surg {
+						top: 232px;
+						left: 314px;
+					}
+
+					.regions__container--tum {
+						top: 272px;
+						left: 275px;
+					}
+
+					.regions__container--izh {
+						top: 222px;
+						left: 227px;
+					}
+
+					.regions__container--nov {
+						top: 326px;
+						left: 335px;
+					}
+
+					.regions__container--omsk {
+						top: 349px;
+						left: 315px;
+					}
+
+					.regions__container--tomsk {
+						top: 313px;
+						left: 398px;
+					}
+
+					.regions__container--kras-yar {
+						top: 327px;
+						left: 430px;
+					}
+
+					.regions__container--irk {
+						top: 355px;
+						left: 485px;
+					}
+
+					.regions__container--hab {
+						top: 349px;
+						right: 50px;
+					}
+
+					.regions__container--vlad {
+						top: 419px;
+						right: 50px;
+					}
+				}
+			}
+
+			.modal {
+				.modal-container {
+					.modal-regions {
+						padding: 0;
+
+						.regions {
+							.regions__item {
+								font-size: 14px;
+								line-height: 14px;
 							}
 						}
 					}
