@@ -1,4 +1,6 @@
 const map = document.querySelector(".map");
+const mapNav = document.querySelector('.map-nav')
+const regionsModal = document.querySelector('.regions')
 const slidebar = document.querySelector(".slidebar");
 const directBanner = document.querySelector(".directions__banner");
 const bannerSize = document.querySelectorAll(".banner-size");
@@ -11,6 +13,8 @@ const modal = document.querySelector('.modal')
 const navItem = document.querySelectorAll('.nav-container__item')
 const regions = document.querySelectorAll('.regions__container')
 const wrapperItem = document.querySelectorAll('.item-info')
+const regionToggle = document.querySelectorAll('.region-toggle')
+const regionTitle = document.querySelectorAll('.region-title')
 let dataSizeIndex;
 let dataRegionIndex;
 dataSet();
@@ -33,9 +37,17 @@ map.addEventListener("click", (e) => {
 		} else {
 			regions[region - 1].classList.remove('none')
 		}
-
 	}
 });
+
+regionsModal.addEventListener('click', (e) => {
+	let title = e.target.dataset.regionTitle
+	if (title) {
+		regionTitle[title - 1].classList.toggle('region-title__red')
+		regionToggle[title - 1].classList.toggle('region-toggle__active')
+	}
+})
+
 
 slidebar.addEventListener("click", () => {
 	rectangleNoActive.classList.toggle("rectangle-active");
@@ -50,6 +62,12 @@ slidebar.addEventListener("click", () => {
 			}
 		})
 	}
+	if (modal.classList.contains('modal-active')) {
+		mapNav.classList.add('overflow')
+	} else {
+		mapNav.classList.remove('overflow')
+	}
+
 });
 
 directBanner.addEventListener("mouseover", (e) => {
@@ -84,6 +102,9 @@ function dataSet() {
 	});
 	wrapperItem.forEach((item, index) => {
 		item.dataset.wrapperItem = index + 1
+	})
+	regionTitle.forEach((item, index) => {
+		item.dataset.regionTitle = index + 1
 	})
 }
 

@@ -735,6 +735,10 @@ body {
 							line-height: 20px;
 							color: #444444;
 
+							.region-toggle {
+								display: block;
+							}
+
 							.regions__item--city {
 								font-weight: 400;
 								margin-top: 12px;
@@ -1497,6 +1501,10 @@ body {
 				}
 			}
 
+			.overflow {
+				overflow-x: hidden;
+			}
+
 			.map__branch {
 				height: 452.8px;
 				width: 794px;
@@ -1505,6 +1513,7 @@ body {
 				margin: 0;
 
 				.regions {
+
 					.regions__container--msk {
 						top: 170px;
 						left: 88px;
@@ -1608,8 +1617,8 @@ body {
 					}
 
 					.regions__container--izh {
-						top: 222px;
-						left: 227px;
+						top: 216px;
+						left: 225px;
 					}
 
 					.regions__container--nov {
@@ -1651,13 +1660,40 @@ body {
 
 			.modal {
 				.modal-container {
+					margin-top: 57px;
+					padding: 0 5px;
+					height: 158px;
+
 					.modal-regions {
 						padding: 0;
 
 						.regions {
+							display: flex;
+							flex-wrap: wrap;
+							height: 100%;
+							align-content: flex-start;
+
 							.regions__item {
+								height: 29px;
+								width: 93px;
 								font-size: 14px;
 								line-height: 14px;
+								font-weight: 600;
+								color: #444444;
+
+								.region-toggle {
+									opacity: 0;
+									font-weight: 400;
+									transition: ease .7s;
+								}
+
+								.region-title__red {
+									color: $cRed;
+								}
+
+								.region-toggle__active {
+									opacity: 1;
+								}
 							}
 						}
 					}

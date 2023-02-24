@@ -932,6 +932,9 @@ body {
   line-height: 20px;
   color: #444444;
 }
+.main-container .map .modal .modal-container .modal-regions .regions .regions__item .region-toggle {
+  display: block;
+}
 .main-container .map .modal .modal-container .modal-regions .regions .regions__item .regions__item--city {
   font-weight: 400;
   margin-top: 12px;
@@ -1716,6 +1719,9 @@ body {
     font-size: 20px;
     line-height: 20px;
   }
+  .main-container .map .overflow {
+    overflow-x: hidden;
+  }
   .main-container .map .map__branch {
     height: 452.8px;
     width: 794px;
@@ -1803,8 +1809,8 @@ body {
     left: 275px;
   }
   .main-container .map .map__branch .regions .regions__container--izh {
-    top: 222px;
-    left: 227px;
+    top: 216px;
+    left: 225px;
   }
   .main-container .map .map__branch .regions .regions__container--nov {
     top: 326px;
@@ -1834,11 +1840,42 @@ body {
     top: 419px;
     right: 50px;
   }
+  .main-container .map .modal .modal-container {
+    margin-top: 57px;
+    padding: 0 5px;
+    height: 158px;
+  }
   .main-container .map .modal .modal-container .modal-regions {
     padding: 0;
   }
+  .main-container .map .modal .modal-container .modal-regions .regions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+  }
   .main-container .map .modal .modal-container .modal-regions .regions .regions__item {
+    height: 29px;
+    width: 93px;
     font-size: 14px;
     line-height: 14px;
+    font-weight: 600;
+    color: #444444;
+  }
+  .main-container .map .modal .modal-container .modal-regions .regions .regions__item .region-toggle {
+    opacity: 0;
+    font-weight: 400;
+    -webkit-transition: ease 0.7s;
+    transition: ease 0.7s;
+  }
+  .main-container .map .modal .modal-container .modal-regions .regions .regions__item .region-title__red {
+    color: #B01736;
+  }
+  .main-container .map .modal .modal-container .modal-regions .regions .regions__item .region-toggle__active {
+    opacity: 1;
   }
 }
