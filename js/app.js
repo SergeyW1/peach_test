@@ -15,6 +15,7 @@ const regions = document.querySelectorAll('.regions__container')
 const wrapperItem = document.querySelectorAll('.item-info')
 const regionToggle = document.querySelectorAll('.region-toggle')
 const regionTitle = document.querySelectorAll('.region-title')
+const directionsBanner = document.querySelectorAll('.directions__banner--noactive')
 let dataSizeIndex;
 let dataRegionIndex;
 dataSet();
@@ -67,11 +68,11 @@ slidebar.addEventListener("click", () => {
 	} else {
 		mapNav.classList.remove('overflow')
 	}
-
 });
 
 directBanner.addEventListener("mouseover", (e) => {
 	let data = e.target.closest(".banner-size");
+	if (directBanner.clientWidth < 350) return;
 	if (!data) return;
 	dataSizeIndex = data.dataset.sizeIn;
 	bannerText[dataSizeIndex].classList.add("banner-text__open");
@@ -82,6 +83,7 @@ directBanner.addEventListener("mouseover", (e) => {
 
 directBanner.addEventListener("mouseout", (e) => {
 	let data = e.target.closest(".banner-size");
+	if (directBanner.clientWidth < 350) return;
 	if (!data) return;
 	dataSizeIndex = data.dataset.sizeIn;
 	bannerText[dataSizeIndex].classList.remove("banner-text__open");
@@ -89,6 +91,21 @@ directBanner.addEventListener("mouseout", (e) => {
 		"banner-text__description-active"
 	);
 });
+
+directBanner.addEventListener('click', (e) => {
+	let data = e.target.closest('.banner-size')
+	if (!data) return
+	dataSizeIndex = data.dataset.sizeIn
+	directionsBanner[dataSizeIndex].classList.toggle('directions__banner--active')
+	bannerSize[dataSizeIndex].classList.toggle('banner-size__active')
+	bannerText[dataSizeIndex].classList.toggle('banner-text__active')
+	bannerTextDescription[dataSizeIndex].classList.toggle('banner-text__description-active')
+	if (bannerSize[dataSizeIndex].classList.contains('banner-size__active')) {
+		document.querySelector('.directions').classList.add('directions__active')
+	} else {
+		document.querySelector('.directions').classList.remove('directions__active')
+	}
+})
 
 function dataSet() {
 	bannerSize.forEach((item, index) => {
