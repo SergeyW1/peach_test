@@ -1291,11 +1291,12 @@ body {
 
 @media all and (max-width: 291px) {
 	body {
-		width: 290px;
+		width: 320px;
 		height: 3525px;
 	}
 
 	.proportions {
+		margin: 0 15px;
 		width: 290px;
 	}
 
@@ -1778,8 +1779,8 @@ body {
 
 					.banner-text {
 						height: 60px;
+						padding-left: 9px;
 
-						// padding: 20px 10px;
 						.banner-text__description {
 							height: 0;
 							margin-top: 0px;

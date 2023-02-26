@@ -1502,10 +1502,11 @@ body {
 
 @media all and (max-width: 291px) {
   body {
-    width: 290px;
+    width: 320px;
     height: 3525px;
   }
   .proportions {
+    margin: 0 15px;
     width: 290px;
   }
   .header .header-title {
@@ -1949,6 +1950,7 @@ body {
   }
   .main-container .directions .directions__banner .banner-size .banner-text {
     height: 60px;
+    padding-left: 9px;
   }
   .main-container .directions .directions__banner .banner-size .banner-text .banner-text__description {
     height: 0;
