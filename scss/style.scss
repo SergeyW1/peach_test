@@ -908,9 +908,9 @@ body {
 						font-weight: 400;
 						line-height: 24px;
 						margin-top: 20px;
-						width: 0;
 						opacity: 0;
 						color: #FFFFFF;
+						width: 20px;
 					}
 
 					.banner-text__description-active {
@@ -1288,7 +1288,12 @@ body {
 	}
 }
 
-@media all and (max-width: 315px) {
+@media all and (max-width: 291px) {
+	body {
+		width: 290px;
+		height: 3525px;
+	}
+
 	.proportions {
 		width: 290px;
 	}
@@ -1670,8 +1675,9 @@ body {
 						.regions {
 							display: flex;
 							flex-wrap: wrap;
-							height: 100%;
+							height: 158px;
 							align-content: flex-start;
+							justify-content: flex-start;
 
 							.regions__item {
 								height: 29px;
@@ -1681,10 +1687,15 @@ body {
 								font-weight: 600;
 								color: #444444;
 
+								h4 {
+									max-width: 93px;
+								}
+
 								.region-toggle {
 									opacity: 0;
 									font-weight: 400;
 									transition: ease .7s;
+									visibility: hidden;
 								}
 
 								.region-title__red {
@@ -1693,6 +1704,7 @@ body {
 
 								.region-toggle__active {
 									opacity: 1;
+									visibility: visible;
 								}
 							}
 						}
@@ -1905,7 +1917,8 @@ body {
 						}
 
 						.item-cart__equipment {
-							background-size: 36px
+							background-size: 36px;
+							width: 36px;
 						}
 
 						.item-cart__mortgage {
