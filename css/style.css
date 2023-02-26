@@ -2090,6 +2090,7 @@ body {
   .main-container .gallery .gallery-content .gallery-content__photo .photo-size {
     height: 210px;
     width: 280px;
+    background-size: cover;
   }
   .main-container .gallery .gallery-content .gallery-content__photo .slick-next {
     opacity: 0;
