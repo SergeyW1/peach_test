@@ -5,6 +5,7 @@ const slidebar = document.querySelector(".slidebar");
 const directBanner = document.querySelector(".directions__banner");
 const bannerSize = document.querySelectorAll(".banner-size");
 const bannerText = document.querySelectorAll(".banner-text");
+const bannerTitle = document.querySelectorAll('.banner-text__title')
 const bannerTextDescription = document.querySelectorAll(".banner-text__description");
 const sliderPhoto = document.querySelectorAll(".photo-size");
 const gallerySlider = document.querySelector(".gallery__slider");
@@ -99,6 +100,7 @@ directBanner.addEventListener('click', (e) => {
 	directionsBanner[dataSizeIndex].classList.toggle('directions__banner--active')
 	bannerSize[dataSizeIndex].classList.toggle('banner-size__active')
 	bannerText[dataSizeIndex].classList.toggle('banner-text__active')
+	bannerTitle[dataSizeIndex].classList.toggle('banner-title__active')
 	bannerTextDescription[dataSizeIndex].classList.toggle('banner-text__description-active')
 	if (bannerSize[dataSizeIndex].classList.contains('banner-size__active')) {
 		document.querySelector('.directions').classList.add('directions__active')

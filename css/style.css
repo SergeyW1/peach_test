@@ -1104,6 +1104,10 @@ body {
   font-weight: inherit;
   line-height: 24px;
   max-width: 308px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .main-container .directions .directions__banner .banner-size .banner-text .banner-text__description {
   font-family: inherit;
@@ -1113,7 +1117,7 @@ body {
   margin-top: 20px;
   opacity: 0;
   color: #FFFFFF;
-  width: 20px;
+  width: 260px;
 }
 .main-container .directions .directions__banner .banner-size .banner-text .banner-text__description-active {
   font-size: 17px;
@@ -1943,7 +1947,25 @@ body {
   }
   .main-container .directions .directions__banner .banner-size .banner-text {
     height: 60px;
-    padding: 20px 10px;
+  }
+  .main-container .directions .directions__banner .banner-size .banner-text .banner-text__description {
+    height: 0;
+    margin-top: 0px;
+  }
+  .main-container .directions .directions__banner .banner-size .banner-text .banner-text__title {
+    font-size: 20px;
+    line-height: 20px;
+    width: 84%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main-container .directions .directions__banner .banner-size .banner-text .banner-text__description-active {
     font-size: 16px;
@@ -1953,12 +1975,7 @@ body {
     width: 260px;
     word-spacing: 3px;
   }
-  .main-container .directions .directions__banner .banner-size .banner-text .banner-text__title {
-    font-size: 20px;
-    line-height: 20px;
-    width: 87%;
-  }
-  .main-container .directions .directions__banner .banner-size .banner-text__active {
+  .main-container .directions .directions__banner .banner-size .banner-text .banner-title__active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1970,6 +1987,13 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 43px;
+  }
+  .main-container .directions .directions__banner .banner-size .banner-text__active {
+    height: 100%;
   }
   .main-container .directions .directions__banner .banner-size .directions__banner--noactive {
     background: url("../img/directions__no-active.svg") no-repeat;
